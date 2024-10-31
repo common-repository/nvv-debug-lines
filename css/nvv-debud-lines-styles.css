@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.nvv-test-rows-header {
+  display: flex;
+}
+
+.nvv-test-rows-header label:hover {
+  cursor: pointer;
+}
+
+.nvv-test-rows {
+  all: unset;
+  position: fixed; 
+  top:35px; 
+  width: 170px;
+  left: -185px; 
+  background-color: rgba(150,150,150, .9);
+  padding: 6px 8px 6px 6px;
+  transition: 0.3s;
+  z-index: 10000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.nvv-test-rows .hover_area {
+  position: absolute;
+  right: -5px;
+  width: 5px;
+  height: 62px;
+  background-color: rgba(150,150,150, .9);
+}
+
+.nvv-test-rows:hover {
+  left: 0;
+}
+
+.nvv-test-rows:hover .hover_area {
+  display: none;
+}
+
+.nvv-test-rows ul {
+  list-style: none; 
+  margin: 5px 0 0; 
+  padding: 0; 
+}
+
+.nvv-test-rows .nvv_wrap_input {
+  position: relative;
+}
+
+.nvv-test-rows .nvv_wrap_input .clear_input {
+  position: absolute;
+  right: 0;
+  padding: 0 3px;
+  font-weight: bold;
+}
+
+.nvv-test-rows .nvv_wrap_input .clear_input:hover {
+  cursor: pointer;
+}
+
+.nvv-test-rows #nvv-check-test-object {
+  font-size: 12px !important; 
+  padding: 0 17px 0 5px !important; 
+  width: 100% !important;
+  box-sizing: border-box;
+  margin: 3px 0 0 3px !important;
+}
+
+.nvv-test-rows input {
+  border: 1px solid black !important;
+  font-size: 12px !important;
+  outline: 0 !important;
+}
+
+.nvv-test-rows input[type="checkbox"] {
+  -webkit-appearance: checkbox !important;
+  -moz-appearance: checkbox !important;
+  -o-appearance: checkbox !important;
+  appearance: checkbox !important;
+  width: 15px;
+  height: 15px;
+  margin-left: 3px;
+}
+
+.nvv-test-rows input[type="checkbox"]:after {
+  display: none !important;
+}
+
+.nvv-test-rows .nvv-box-color {
+  width: 10px;
+  height: 10px;
+}
+
+.nvv-test-rows label {
+  font-size: 0.75em !important;
+  margin: 0 6px 0 3px !important;
+  font-weight: normal !important;
+  color: white !important;
+  width: 100% !important;
+  padding: 0 !important;
+  overflow-y: hidden;
+}
+
+.nvv-test-rows li {
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.nvv-test-rows li:hover {
+  background-color: rgba(150,150,150, 1);
+}
+
+.nvv-test-rows ::-webkit-scrollbar {
+  height: 6px;
+}
+
+/* Track */
+.nvv-test-rows ::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+/* Handle */
+.nvv-test-rows ::-webkit-scrollbar-thumb {
+  background: #8A8A8A;
+}
+
+/* Handle on hover */
+.nvv-test-rows ::-webkit-scrollbar-thumb:hover {
+  background: #5F5F5F;
+}
